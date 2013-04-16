@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="libs"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/Documents/libGDX/gdx.jar" sourcepath="D:/Documents/libGDX/gdx.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/Documents/libGDX/gdx.jar!/com/badlogic/gdx"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Documents/libGDX/sources/gdx-sources.jar" sourcepath="D:/Documents/libGDX/sources/gdx-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/D:/Documents/libGDX/sources/gdx-sources.jar!/com/badlogic/gdx"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
