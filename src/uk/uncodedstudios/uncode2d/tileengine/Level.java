@@ -3,6 +3,7 @@ package uk.uncodedstudios.uncode2d.tileengine;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 
@@ -46,7 +47,7 @@ public class Level {
 				// LONGEST DRAW METHOD EVER
 				batch.draw(Tile.TileSetTexture, 
 				(float)((x * Tile.RenderTileWidth) - offsetX), 
-				(float)((y * Tile.RenderTileHeight) - offsetY), 
+				(float)((Gdx.graphics.getHeight() - Tile.RenderTileHeight) - ((y * Tile.RenderTileHeight) - offsetY)), // the extra stuff here makes it render to y-down coords
 				(float)Tile.RenderTileWidth, 
 				(float)Tile.RenderTileHeight,
 				(int)Tile.GetSourceRectangle(myMap.Rows.get(y+firstY).Columns.get(x+firstX).getTileID()).x,
